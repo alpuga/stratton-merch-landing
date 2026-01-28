@@ -9,14 +9,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center">
-              {/* <Image
-                src="/stratton-logo.png"
-                alt="Stratton Merch Logo"
-                width={60}
-                height={60}
-                className="rounded-lg"
-              /> */}
-              <span className="ml-3 text-white text-xl font-bold">Stratton Merch</span>
+              <Image
+                src="/stratton_word_logo.png"
+                alt="Stratton Merch"
+                width={150}
+                height={40}
+                className="object-contain"
+              />
             </div>
             <a
               href="https://cal.com/stratton-merch-4t6mx8/15min"
@@ -35,11 +34,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex justify-center mb-8">
             <Image
-              src="/stratton-logo.png"
+              src="/lion_logo_transparent.png"
               alt="Stratton Merch Logo"
-              width={250}
-              height={250}
-              className="rounded-lg"
+              width={200}
+              height={200}
+              className="object-contain"
               priority
             />
           </div>

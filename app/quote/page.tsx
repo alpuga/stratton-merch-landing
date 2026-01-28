@@ -56,13 +56,12 @@ export default function QuotePage() {
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="flex items-center">
               <Image
-                src="/stratton-logo.png"
-                alt="Stratton Merch Logo"
-                width={60}
-                height={60}
-                className="rounded-lg"
+                src="/stratton_word_logo.png"
+                alt="Stratton Merch"
+                width={150}
+                height={40}
+                className="object-contain"
               />
-              <span className="ml-3 text-white text-xl font-bold">Stratton Merch</span>
             </Link>
           </div>
         </div>
