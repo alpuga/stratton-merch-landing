@@ -19,7 +19,7 @@ export default function Home() {
               <span className="ml-3 text-white text-xl font-bold">Stratton Merch</span>
             </div>
             <a
-              href="https://cal.com/alex-puga-4t6mx8/15min"
+              href="https://cal.com/stratton-merch-4t6mx8/15min"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#4a9fd8] hover:bg-[#3d8ac2] text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors"
@@ -54,7 +54,7 @@ export default function Home() {
               Request a Quote
             </Link>
             <a
-              href="https://cal.com/alex-puga-4t6mx8/15min"
+              href="https://cal.com/stratton-merch-4t6mx8/15min"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-white/30 hover:border-white text-white px-6 py-3 rounded-lg text-base font-medium transition-colors"
