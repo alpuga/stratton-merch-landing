@@ -10,6 +10,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Stratton Merch - Premium Merchandise Solutions",
   description: "Premium merchandise solutions for businesses worldwide. Quality, reliability, and excellence in every product.",
+  icons: {
+    icon: '/stratton-logo.png',
+  },
 };
 
 export default function RootLayout({
