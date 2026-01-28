@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Stratton Merch - Quality Merchandise Solutions",
-  description: "Quality merchandise solutions for businesses worldwide. Quality, reliability, and excellence in every product.",
+  title: "Stratton Merch | Fresh Startup Merchandise, Done Right.",
+  description: "We create custom merchandise that turns your team and customers into brand ambassadors.",
   icons: {
     icon: '/stratton-logo.png',
   },
