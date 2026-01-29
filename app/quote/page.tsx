@@ -19,6 +19,7 @@ export default function QuotePage() {
       company: formData.get('company'),
       name: formData.get('name'),
       email: formData.get('email'),
+      phone: formData.get('phone'),
       quantity: formData.get('quantity'),
       products: formData.get('products'),
       timeline: formData.get('timeline'),
@@ -124,6 +125,20 @@ export default function QuotePage() {
                     placeholder="john@company.com"
                   />
                 </div>
+              </div>
+
+              {/* Phone Number */}
+              <div>
+                <label htmlFor="phone" className="block text-white text-sm font-medium mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
+                  placeholder="(555) 123-4567"
+                />
               </div>
 
               {/* Quantity */}
