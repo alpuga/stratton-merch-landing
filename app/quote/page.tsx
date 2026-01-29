@@ -138,6 +138,34 @@ export default function QuotePage() {
                   name="phone"
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
                   placeholder="(555) 123-4567"
+                  onInput={(e) => {
+                    const input = e.target as HTMLInputElement;
+                    const digits = input.value.replace(/\D/g, '');
+
+                    // Limit to 10 digits
+                    const limitedDigits = digits.slice(0, 10);
+
+                    // Format as (xxx) xxx-xxxx
+                    let formatted = '';
+                    if (limitedDigits.length > 0) {
+                      formatted = '(' + limitedDigits.slice(0, 3);
+                      if (limitedDigits.length > 3) {
+                        formatted += ') ' + limitedDigits.slice(3, 6);
+                      }
+                      if (limitedDigits.length > 6) {
+                        formatted += '-' + limitedDigits.slice(6, 10);
+                      }
+                    }
+
+                    input.value = formatted;
+
+                    // Validate
+                    if (limitedDigits.length !== 10 && limitedDigits.length > 0) {
+                      input.setCustomValidity('Please enter a 10-digit phone number');
+                    } else {
+                      input.setCustomValidity('');
+                    }
+                  }}
                 />
               </div>
 
