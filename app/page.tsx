@@ -30,17 +30,17 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-40 pb-32 px-4 sm:px-6 lg:px-8">
+      <section className="p-60 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex justify-center mb-8">
-            <Image
+            {/* <Image
               src="/lion_logo_transparent.png"
               alt="Stratton Merch Logo"
               width={200}
               height={200}
               className="object-contain"
               priority
-            />
+            /> */}
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
             Startup Merch, <span className="text-[#4a9fd8]">Done Right.</span>
