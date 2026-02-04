@@ -30,10 +30,9 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="p-6
-      0 px-4 sm:px-6 lg:px-8">
+      <section className="p-25 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mt-10 mb-8">
             <Image
               src="/lion_logo_transparent.png"
               alt="Stratton Merch Logo"
