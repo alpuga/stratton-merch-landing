@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#1a1f3a] scroll-smooth">
+    <div className="min-h-screen bg-gray-50 scroll-smooth">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-[#1a1f3a]/95 backdrop-blur-sm z-50 border-b border-white/10">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center">
@@ -42,10 +42,10 @@ export default function Home() {
               priority
             />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Startup Merch, <span className="text-[#4a9fd8]">Done Right.</span>
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+            Merch is<span className="text-[#4a9fd8]"> Culture.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
             We create custom merchandise that turns your team and customers into brand ambassadors.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -56,60 +56,159 @@ export default function Home() {
               href="https://cal.com/stratton-merch-4t6mx8/15min"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white/30 hover:border-white text-white px-6 py-3 rounded-lg text-base font-medium transition-colors"
+              className="border border-gray-300 hover:border-gray-900 text-gray-900 px-6 py-3 rounded-lg text-base font-medium transition-colors"
             >
               Book a Call
             </a>
           </div>
 
           {/* Logo Reel */}
-          <div className="mt-20">
-            <p className="text-white/60 text-sm uppercase tracking-wider mb-8">
-              Trusted by startups backed by
+          <div className="mt-20 py-16 px-4">
+            <p className="text-gray-600 text-sm uppercase tracking-wider mb-8">
+              Brands we work with
             </p>
             <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
-              <div className="opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+              <div className="hover:scale-105 transition-transform">
                 <Image
-                  src="/sequoia.png"
-                  alt="Sequoia Capital"
+                  src="/NIKE.svg"
+                  alt="Nike"
                   width={120}
                   height={40}
                   className="object-contain"
                 />
               </div>
-              <div className="opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+              <div className="hover:scale-105 transition-transform">
                 <Image
-                  src="/bcv.webp"
-                  alt="Bain Capital Ventures"
-                  width={100}
-                  height={35}
-                  className="object-contain"
-                />
-              </div>
-              <div className="opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                <Image
-                  src="/greycroft.svg"
-                  alt="Greycroft"
+                  src="/ADIDAS.svg"
+                  alt="Adidas"
                   width={120}
                   height={40}
                   className="object-contain"
                 />
               </div>
-              <div className="opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+              <div className="hover:scale-105 transition-transform">
                 <Image
-                  src="/yc.webp"
-                  alt="Y Combinator"
+                  src="/PATAGONIA.svg"
+                  alt="Patagonia"
                   width={120}
                   height={40}
                   className="object-contain"
                 />
               </div>
-              <div className="opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+              <div className="hover:scale-105 transition-transform">
                 <Image
-                  src="/a16z.png"
-                  alt="Andreessen Horowitz"
-                  width={100}
-                  height={35}
+                  src="/THENORTHFACE.svg"
+                  alt="The North Face"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/YETI.svg"
+                  alt="Yeti"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/CARHARTT.svg"
+                  alt="Carhartt"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/COLUMBIA.svg"
+                  alt="Columbia"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/CHAMPION.svg"
+                  alt="Champion"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/STANLEY.svg"
+                  alt="Stanley"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/CALLAWAY.svg"
+                  alt="Callaway"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/TITLEIST.svg"
+                  alt="Titleist"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/RUSSELL.svg"
+                  alt="Russell"
+                  width={90}
+                  height={30}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/TOMMYBAHAMA.svg"
+                  alt="Tommy Bahama"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/BROOKSBROTHERS.svg"
+                  alt="Brooks Brothers"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/EDDIEBAUER.svg"
+                  alt="Eddie Bauer"
+                  width={120}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <div className="hover:scale-105 transition-transform">
+                <Image
+                  src="/AMERICANAPPAREL.svg"
+                  alt="American Apparel"
+                  width={120}
+                  height={40}
                   className="object-contain"
                 />
               </div>
@@ -119,9 +218,9 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-white/50 text-sm">&copy; 2026 Stratton Merch. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">&copy; 2026 Stratton Merch. All rights reserved.</p>
         </div>
       </footer>
     </div>

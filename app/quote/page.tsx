@@ -50,9 +50,9 @@ export default function QuotePage() {
     }
   };
   return (
-    <div className="min-h-screen bg-[#1a1f3a]">
+    <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-[#1a1f3a]/95 backdrop-blur-sm z-50 border-b border-white/10">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="flex items-center">
@@ -72,19 +72,19 @@ export default function QuotePage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Request a <span className="text-[#4a9fd8]">Quote</span>
             </h1>
-            <p className="text-lg text-white/70">
+            <p className="text-lg text-gray-700">
               Tell us about your project and we'll get back to you within 24 hours.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+          <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
             <div className="space-y-6">
               {/* Company Name */}
               <div>
-                <label htmlFor="company" className="block text-white text-sm font-medium mb-2">
+                <label htmlFor="company" className="block text-gray-900 text-sm font-medium mb-2">
                   Company Name *
                 </label>
                 <input
@@ -92,7 +92,7 @@ export default function QuotePage() {
                   id="company"
                   name="company"
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
                   placeholder="Your company name"
                 />
               </div>
@@ -100,7 +100,7 @@ export default function QuotePage() {
               {/* Contact Info - Grid */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-white text-sm font-medium mb-2">
+                  <label htmlFor="name" className="block text-gray-900 text-sm font-medium mb-2">
                     Your Name *
                   </label>
                   <input
@@ -108,12 +108,12 @@ export default function QuotePage() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-white text-sm font-medium mb-2">
+                  <label htmlFor="email" className="block text-gray-900 text-sm font-medium mb-2">
                     Email *
                   </label>
                   <input
@@ -121,7 +121,7 @@ export default function QuotePage() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -129,14 +129,14 @@ export default function QuotePage() {
 
               {/* Phone Number */}
               <div>
-                <label htmlFor="phone" className="block text-white text-sm font-medium mb-2">
+                <label htmlFor="phone" className="block text-gray-900 text-sm font-medium mb-2">
                   Phone Number
                 </label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
                   placeholder="(555) 123-4567"
                   onInput={(e) => {
                     const input = e.target as HTMLInputElement;
@@ -171,67 +171,67 @@ export default function QuotePage() {
 
               {/* Quantity */}
               <div>
-                <label htmlFor="quantity" className="block text-white text-sm font-medium mb-2">
+                <label htmlFor="quantity" className="block text-gray-900 text-sm font-medium mb-2">
                   Estimated Quantity *
                 </label>
                 <select
                   id="quantity"
                   name="quantity"
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
                 >
-                  <option value="" className="bg-[#1a1f3a]">Select quantity range</option>
-                  <option value="25-50" className="bg-[#1a1f3a]">25-50 items</option>
-                  <option value="50-100" className="bg-[#1a1f3a]">50-100 items</option>
-                  <option value="100-250" className="bg-[#1a1f3a]">100-250 items</option>
-                  <option value="250-500" className="bg-[#1a1f3a]">250-500 items</option>
-                  <option value="500+" className="bg-[#1a1f3a]">500+ items</option>
+                  <option value="" className="bg-white text-gray-900">Select quantity range</option>
+                  <option value="25-50" className="bg-white text-gray-900">25-50 items</option>
+                  <option value="50-100" className="bg-white text-gray-900">50-100 items</option>
+                  <option value="100-250" className="bg-white text-gray-900">100-250 items</option>
+                  <option value="250-500" className="bg-white text-gray-900">250-500 items</option>
+                  <option value="500+" className="bg-white text-gray-900">500+ items</option>
                 </select>
               </div>
 
               {/* Product Type */}
               <div>
-                <label htmlFor="products" className="block text-white text-sm font-medium mb-2">
+                <label htmlFor="products" className="block text-gray-900 text-sm font-medium mb-2">
                   What type of products are you interested in?
                 </label>
                 <input
                   type="text"
                   id="products"
                   name="products"
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
                   placeholder="e.g., T-shirts, hoodies, stickers, mugs"
                 />
               </div>
 
               {/* Timeline */}
               <div>
-                <label htmlFor="timeline" className="block text-white text-sm font-medium mb-2">
+                <label htmlFor="timeline" className="block text-gray-900 text-sm font-medium mb-2">
                   When do you need this?
                 </label>
                 <select
                   id="timeline"
                   name="timeline"
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors"
                 >
-                  <option value="" className="bg-[#1a1f3a]">Select timeline</option>
-                  <option value="asap" className="bg-[#1a1f3a]">ASAP</option>
-                  <option value="1-2weeks" className="bg-[#1a1f3a]">1-2 weeks</option>
-                  <option value="2-4weeks" className="bg-[#1a1f3a]">2-4 weeks</option>
-                  <option value="1-2months" className="bg-[#1a1f3a]">1-2 months</option>
-                  <option value="flexible" className="bg-[#1a1f3a]">Flexible</option>
+                  <option value="" className="bg-white text-gray-900">Select timeline</option>
+                  <option value="asap" className="bg-white text-gray-900">ASAP</option>
+                  <option value="1-2weeks" className="bg-white text-gray-900">1-2 weeks</option>
+                  <option value="2-4weeks" className="bg-white text-gray-900">2-4 weeks</option>
+                  <option value="1-2months" className="bg-white text-gray-900">1-2 months</option>
+                  <option value="flexible" className="bg-white text-gray-900">Flexible</option>
                 </select>
               </div>
 
               {/* Project Details */}
               <div>
-                <label htmlFor="details" className="block text-white text-sm font-medium mb-2">
+                <label htmlFor="details" className="block text-gray-900 text-sm font-medium mb-2">
                   Tell us about your project
                 </label>
                 <textarea
                   id="details"
                   name="details"
                   rows={5}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#4a9fd8] focus:ring-1 focus:ring-[#4a9fd8] transition-colors resize-none"
                   placeholder="Share any details about your project, design requirements, or questions you have..."
                 ></textarea>
               </div>
@@ -248,19 +248,19 @@ export default function QuotePage() {
               </div>
 
               {submitStatus === 'success' && (
-                <div className="bg-green-500/20 border border-green-500/50 text-green-200 px-4 py-3 rounded-lg text-center">
+                <div className="bg-green-50 border border-green-500 text-green-700 px-4 py-3 rounded-lg text-center">
                   Thanks! We'll get back to you within 24 hours.
                 </div>
               )}
 
               {submitStatus === 'error' && (
-                <div className="bg-red-500/20 border border-red-500/50 text-red-200 px-4 py-3 rounded-lg text-center">
+                <div className="bg-red-50 border border-red-500 text-red-700 px-4 py-3 rounded-lg text-center">
                   Something went wrong. Please try again or email us directly.
                 </div>
               )}
 
               {submitStatus === 'idle' && (
-                <p className="text-white/50 text-sm text-center">
+                <p className="text-gray-500 text-sm text-center">
                   We'll review your request and get back to you within 24 hours.
                 </p>
               )}
@@ -270,9 +270,9 @@ export default function QuotePage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-white/50 text-sm">&copy; 2026 Stratton Merch. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">&copy; 2026 Stratton Merch. All rights reserved.</p>
         </div>
       </footer>
     </div>
