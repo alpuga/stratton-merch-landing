@@ -58,7 +58,7 @@ export default function Home() {
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             Merch is
-            <span className="inline-block ml-3 md:ml-4 text-[#4a9fd8]">
+            <span className="inline-block ml-3 md:ml-4 text-[#4a9fd8] overflow-visible">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={words[currentWordIndex]}
@@ -66,7 +66,7 @@ export default function Home() {
                   animate={{ clipPath: "inset(0 0% 0 0)" }}
                   exit={{ clipPath: "inset(0 0 0 100%)" }}
                   transition={{ duration: 0.5 }}
-                  className="inline-block"
+                  className="inline-block pb-2"
                 >
                   {words[currentWordIndex]}.
                 </motion.span>
