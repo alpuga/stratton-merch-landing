@@ -1,7 +1,21 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home() {
+  const words = ["Culture", "Mission", "Identity", "Vibe"];
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 2500); // Change word every 2.5 seconds
+
+    return () => clearInterval(interval);
+  }, [words.length]);
   return (
     <div className="min-h-screen bg-gray-50 scroll-smooth">
       {/* Navigation */}
@@ -43,7 +57,21 @@ export default function Home() {
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            Merch is<span className="text-[#4a9fd8]"> Culture.</span>
+            Merch is
+            <span className="inline-block ml-3 md:ml-4 text-[#4a9fd8]">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={words[currentWordIndex]}
+                  initial={{ clipPath: "inset(0 100% 0 0)" }}
+                  animate={{ clipPath: "inset(0 0% 0 0)" }}
+                  exit={{ clipPath: "inset(0 0 0 100%)" }}
+                  transition={{ duration: 0.5 }}
+                  className="inline-block"
+                >
+                  {words[currentWordIndex]}.
+                </motion.span>
+              </AnimatePresence>
+            </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
             We create custom merchandise that turns your team and customers into brand ambassadors.
