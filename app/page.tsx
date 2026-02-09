@@ -93,7 +93,7 @@ export default function Home() {
           {/* Logo Reel */}
           <div className="mt-20 py-16 px-4">
             <p className="text-gray-600 text-sm uppercase tracking-wider mb-8">
-              Brands we work with
+              Shop Featured Brands
             </p>
             <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
               <div className="hover:scale-105 transition-transform">
