@@ -32,7 +32,7 @@ export default function Home() {
               />
             </div>
             <a
-              href="https://cal.com/stratton-merch-4t6mx8/15min"
+              href="https://meetings-na2.hubspot.com/alex-puga"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#4a9fd8] hover:bg-[#3d8ac2] text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors"
@@ -46,9 +46,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="p-25 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="flex justify-center mt-10 mb-8">
+          <div className="flex justify-center mt-25 mb-20">
             <Image
-              src="/lion_logo_transparent.png"
+              src="/StrattonMerchGorilla.png"
               alt="Stratton Merch Logo"
               width={200}
               height={200}
@@ -81,7 +81,7 @@ export default function Home() {
               Request a Quote
             </Link>
             <a
-              href="https://cal.com/stratton-merch-4t6mx8/15min"
+              href="https://meetings-na2.hubspot.com/alex-puga"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-gray-300 hover:border-gray-900 text-gray-900 px-6 py-3 rounded-lg text-base font-medium transition-colors"
