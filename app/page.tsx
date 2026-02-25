@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home() {
-  const words = ["Culture", "Mission", "Identity", "Vibe"];
+  const words = ["Community", "Mission", "Identity", "Vibe"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
