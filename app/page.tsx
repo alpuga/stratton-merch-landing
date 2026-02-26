@@ -48,7 +48,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex justify-center mt-25 mb-20">
             <Image
-              src="/StrattonMerchGorilla.png"
+              src="/StrattonMerchGorilla_1.png"
               alt="Stratton Merch Logo"
               width={200}
               height={200}

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Stratton Merch | Quality Merchandise, Done Right.",
   description: "We create custom merchandise that turns your team and customers into brand ambassadors.",
   icons: {
-    icon: '/stratton_gorilla_logo_1.png',
+    icon: '/stratton_gorilla_logo.png',
   },
 };
 
