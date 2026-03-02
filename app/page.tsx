@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Linkedin } from "lucide-react";
 
 export default function Home() {
   const words = ["Culture", "Mission", "Identity", "Vibe"];
@@ -246,9 +247,19 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-500 text-sm">&copy; 2026 Stratton Merch. All rights reserved.</p>
+      <footer className="py-6 border-gray-500">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between text-gray-500 text-sm">
+            <a
+                href="https://linkedin.com/company/stratton-merch/"
+                target="_blank"
+                rel="noopener"
+                className="hover:text-gray-900 transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+            <span>&copy; 2026 Stratton Merch. All rights reserved.</span>
+          </div>
         </div>
       </footer>
     </div>
