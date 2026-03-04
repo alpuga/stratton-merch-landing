@@ -23,20 +23,20 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <div className="flex items-center text-gray-500">Lap Merch
-              {/* <Image
-                src="/stratton_word_logo.png"
-                alt="Stratton Merch"
-                width={150}
+            <div className="flex items-center text-gray-500">
+              <Image
+                src="/lap_word_logo_1.png"
+                alt="Lap Merch"
+                width={50}
                 height={40}
                 className="object-contain"
-              /> */}
+              />
             </div>
             <a
               href="https://meetings-na2.hubspot.com/alex-puga"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#6f7376] hover:bg-[#5a5d60] text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors"
+              className="bg-[#2c2c3c] hover:bg-[#800000] text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               Book a Call
             </a>
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="flex justify-center mt-25 mb-20">
             <Image
               src="/lap_logo.png"
-              alt="Stratton Merch Logo"
+              alt="Lap Merch Logo"
               width={200}
               height={200}
               className="object-contain"
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             Merch is
-            <span className="inline-block ml-3 md:ml-4 text-[#818589] overflow-visible">
+            <span className="inline-block ml-3 md:ml-4 text-[#800000] overflow-visible">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={words[currentWordIndex]}
@@ -78,7 +78,7 @@ export default function Home() {
             We create custom merchandise that turns your team and customers into brand ambassadors.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/quote" className="bg-[#6f7376] hover:bg-[#5a5d60] text-white px-6 py-3 rounded-lg text-base font-medium transition-colors">
+            <Link href="/quote" className="bg-[#2c2c3c] hover:bg-[#800000] text-white px-6 py-3 rounded-lg text-base font-medium transition-colors">
               Request a Quote
             </Link>
             <a
@@ -251,14 +251,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between text-gray-500 text-sm">
             <a
-                href="https://linkedin.com/company/stratton-merch/"
+                href="https://linkedin.com/company/lap-merch/"
                 target="_blank"
                 rel="noopener"
                 className="hover:text-gray-900 transition-colors"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
-            <span>&copy; 2026 Stratton Merch. All rights reserved.</span>
+            <span>&copy; 2026 Lap Merch. All rights reserved.</span>
           </div>
         </div>
       </footer>
