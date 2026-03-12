@@ -57,8 +57,8 @@ export default function QuotePage() {
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="flex items-center">
               <Image
-                src="/stratton_word_logo.png"
-                alt="Stratton Merch"
+                src="/Stratton_v3.png"
+                alt="Stratton Merch Logo"
                 width={150}
                 height={40}
                 className="object-contain"
@@ -73,7 +73,7 @@ export default function QuotePage() {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Request a <span className="text-[#4a9fd8]">Quote</span>
+              Request a <span className="text-[#800000]">Quote</span>
             </h1>
             <p className="text-lg text-gray-700">
               Tell us about your project and we'll get back to you within 24 hours.
@@ -241,7 +241,7 @@ export default function QuotePage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#4a9fd8] hover:bg-[#3d8ac2] text-white px-6 py-3 rounded-lg text-base font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-[#2c2c3c] hover:bg-[#800000] text-white px-6 py-3 rounded-lg text-base font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit Quote Request'}
                 </button>
