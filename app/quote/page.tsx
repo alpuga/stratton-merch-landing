@@ -57,9 +57,9 @@ export default function QuotePage() {
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="flex items-center">
               <Image
-                src="/lap_word_logo.png"
-                alt="Lap Merch"
-                width={50}
+                src="/Stratton_v3.png"
+                alt="Stratton Merch Logo"
+                width={150}
                 height={40}
                 className="object-contain"
               />
@@ -272,7 +272,7 @@ export default function QuotePage() {
       {/* Footer */}
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-500 text-sm">&copy; 2026 Lap Merch. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">&copy; 2026 Stratton Merch. All rights reserved.</p>
         </div>
       </footer>
     </div>

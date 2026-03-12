@@ -25,9 +25,9 @@ export default function Home() {
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center text-gray-500">
               <Image
-                src="/lap_word_logo_1.png"
-                alt="Lap Merch"
-                width={50}
+                src="/Stratton_v3.png"
+                alt="Stratton Merch Logo"
+                width={150}
                 height={40}
                 className="object-contain"
               />
@@ -48,14 +48,14 @@ export default function Home() {
       <section className="p-25 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex justify-center mt-25 mb-20">
-            <Image
+            {/* <Image
               src="/lap_logo.png"
               alt="Lap Merch Logo"
               width={200}
               height={200}
               className="object-contain"
               priority
-            />
+            /> */}
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             Merch is
@@ -251,14 +251,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between text-gray-500 text-sm">
             <a
-                href="https://linkedin.com/company/lap-merch/"
+                href="https://linkedin.com/company/stratton-merch/"
                 target="_blank"
                 rel="noopener"
                 className="hover:text-gray-900 transition-colors"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
-            <span>&copy; 2026 Lap Merch. All rights reserved.</span>
+            <span>&copy; 2026 Stratton Merch. All rights reserved.</span>
           </div>
         </div>
       </footer>
