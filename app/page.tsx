@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
 
 export default function Home() {
-  const words = ["Culture", "Mission", "Identity", "Energy"];
+  const words = ["Culture", "Mission", "Identity", "Recognition"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
