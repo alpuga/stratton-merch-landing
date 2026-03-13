@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
 
 export default function Home() {
-  const words = ["Culture", "Mission", "Identity", "Vibe"];
+  const words = ["Culture", "Mission", "Identity", "Energy"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
@@ -47,7 +47,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="p-25 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="flex justify-center mt-25 mb-20">
+          <div className="flex justify-center mt-15 mb-20">
             {/* <Image
               src="/lap_logo.png"
               alt="Lap Merch Logo"
